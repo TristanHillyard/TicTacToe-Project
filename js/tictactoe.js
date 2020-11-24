@@ -33,7 +33,7 @@ function placeXOrO(squareNumber) {
             activePlayer = 'X';
         }
         //this function plays sounds 
-        audio('./media/xsound.mp3');
+        audio('./media/place.mp3');
         //condition checks to see if it is computers turn
         if (activePlayer === 'O'){
             //disables clicking for computer choice
@@ -191,7 +191,7 @@ function drawWinLine(coordX1, corrdY1, coordX2, coordY2) {
 //this function resets the game in a tie or a win
 function resetGame() {
     //this for loop iterates through the html square element 
-    for (let i = 0; i < 0; i++) {
+    for (let i = 0; i < 9; i++) {
         //this variable gets the html element of i
         let square = document.getElementById(String(i));
         //this removes our elements backgroundImage
